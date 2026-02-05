@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Homepage</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png"  href="imges/logo/icon.png">
+
+
+
+
+
+
+</head>
+
+
+<body>
+
+
+
+<header class="header">
+ <link href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Marathi&family=Sahitya&family=Khand:wght@400;600&display=swap" rel="stylesheet">
+ 
+
+
+
+  <div class="logo">
+    <img src="imges/logo/logo.png" alt="Logo">
+  </div>
+  <nav class="nav">
+    <a href="#">Home</a>
+    <a href="#">About Us</a>
+    <a href="#">Contact Us</a>
+  </nav>
+</header>
+
+<main class="content">
+
+
+
+
+  <section class="home-intro">
+  <h1>"रूपांतर" भूतकाळाला वर्तमानात आणणारी कल्पना.</h1>
+  <!-- <p>
+    "रूपांतर" भूतकाळाला वर्तमानात आणणारी कल्पना.
+  </p> -->
+</section>
+
+<section class="product left">
+    <img src="imges/product/5.png">
+    <div class="text">
+      <h2>Customize शिवप्रतिमा</h2>
+      <p>राजांनी घडवलेल्या विविध पराक्रमांवर आधारित, इतिहास जिवंत करणारी चित्रमालिका.</p>
+            <a 
+        href="Product_pages/fifthproduct.html"
+        class="kbtn">
+        Know more...
+            </a>
+    </div>
+  </section>
+
+  <section class="product right">
+    <img src="imges/product/1.png">
+    <div class="text">
+      <h2>शिवदिनदर्शिका २०२६</h2>
+      <p>पारंपरिक दिनदर्शिकेसोबत मराठ्यांचा गौरवशाली इतिहास जपणारी दिनदर्शिका. </p>
+            <a 
+        href="Product_pages/firstproduct.html"
+        class="kbtn">
+        Know more...
+            </a>
+
+    </div>
+  </section>
+
+  <section class="product left">
+    <img src="imges/product/2.png">
+    <div class="text">
+      <h2>स्वामीदिनदर्शिका २०२६</h2>
+      <p>दिनदर्शिका सोबत स्वामींच्या अगाध लीला</p>
+            <a 
+        href="Product_pages/secondproduct.html"
+        class="kbtn">
+        Know more...
+            </a>
+    </div>
+  </section>
+
+  <section class="product right">
+    <img src="imges/product/3.png">
+    <div class="text">
+      <h2>म्या</h2>
+      <p>एका मावळ्याची गुप्त डायरी</p>
+        <a 
+        href="Product_pages/thirdproduct.html"
+        class="kbtn">
+        Know more...
+            </a>
+    </div>
+  </section>
+
+  <section class="product left">
+    <img src="imges/product/4.png">
+    <div class="text">
+      <h2>गैरसमजांचे राजकारण</h2>
+      <p>छत्रपतींवर संबंधित जे गैरसमज समाजात वावरत आहेत ते खोडून टाकण्यासाठी एक पुस्तक लिहिले आहे.</p>
+        <a 
+        href="Product_pages/fourthproduct.html"
+        class="kbtn">
+        Know more...
+            </a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  © 2026 Roopantar
+</footer>
+
+
+<script>
+const products = document.querySelectorAll('.product');
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show');
+    }
+  });
+}, {
+  threshold: 0.3
+});
+
+products.forEach(p => observer.observe(p));
+</script>
+
+
+</body>
+</html>
